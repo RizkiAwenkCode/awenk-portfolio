@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #003060;
+  --color-yellow: #fcd116;
+  --color-canvas: #f8fafd;
+  --color-surface: #f2f6fa;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-button: 8px;
+  --radius-card: 12px;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-yellow: var(--color-yellow);
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-ibm-plex-mono);
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-canvas);
+  color: var(--color-navy);
+  font-family: var(--font-inter), sans-serif;
+  font-size: 16px;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-yellow);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -26,3 +26,16 @@
 - Added semantic color, spacing, typography, radius, and focus tokens from the approved design system.
 - Loaded Inter and IBM Plex Mono through `next/font/google`.
 - Added a temporary foundation preview only; portfolio sections remain unimplemented.
+
+## 2026-09-20: Global and Hero implemented
+
+- Implemented the persistent desktop navigation, bilingual ID/EN toggle, skip link, three-column footer, and contact routes.
+- Implemented the approved Hero copy, CTAs, expertise labels, and labeled abstract visual placeholder.
+- Added reserved placeholders for future section anchors so Global and Hero navigation can be reviewed without implementing later sections.
+
+## 2026-09-20: Remaining sections implemented
+
+- Implemented independently styled Capabilities, Selected Work, Process, Experience, Toolbox, About, and Contact sections.
+- Implemented the separate `/case-study` route with the approved narrative order and explicit factual placeholders.
+- Kept each section's styling in a colocated CSS module and translated content in the shared content model.
+- Added the approved Contact entry animation with reduced-motion fallback.

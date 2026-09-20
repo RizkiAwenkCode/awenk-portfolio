@@ -14,8 +14,8 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Awenk | Design foundation preview",
-  description: "Design foundation preview for Awenk's portfolio.",
+  title: "Awenk | Frontend Software Engineer",
+  description: "Awenk, Frontend Software Engineer in Jakarta, Indonesia.",
 };
 
 export default function RootLayout({

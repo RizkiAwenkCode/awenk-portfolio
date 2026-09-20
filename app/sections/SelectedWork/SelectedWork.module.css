@@ -1,0 +1,20 @@
+.section { max-width: 1280px; margin: 0 auto; padding: 96px 80px; }
+.headingRow { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 40px; }
+.eyebrow, .projectType { margin: 0 0 12px; color: color-mix(in srgb, var(--color-navy) 62%, transparent); font: 14px/1.4 var(--font-ibm-plex-mono), monospace; letter-spacing: .08em; text-transform: uppercase; }
+.headingRow h2 { max-width: 720px; margin: 0; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -.02em; }
+.note { margin: 0 0 4px; font: 14px/1.4 var(--font-ibm-plex-mono), monospace; color: color-mix(in srgb, var(--color-navy) 62%, transparent); }
+.project { display: grid; gap: 24px; border: 1px solid color-mix(in srgb, var(--color-navy) 16%, transparent); border-radius: var(--radius-card); background: var(--color-surface); overflow: hidden; }
+.flagship { grid-template-columns: 1.1fr .9fr; margin-bottom: 24px; }
+.visual, .smallVisual { position: relative; display: grid; place-items: center; min-height: 300px; background: var(--color-navy); color: var(--color-canvas); overflow: hidden; }
+.visual span, .smallVisual span { position: relative; z-index: 1; padding: 8px 12px; border: 1px solid color-mix(in srgb, var(--color-yellow) 70%, transparent); color: var(--color-yellow); font: 12px/1.4 var(--font-ibm-plex-mono), monospace; text-transform: uppercase; }
+.visual i { position: absolute; width: 240px; height: 240px; border: 20px solid var(--color-yellow); border-radius: 50%; transform: translate(80px, -40px); }
+.smallVisual { min-height: 180px; background: color-mix(in srgb, var(--color-navy) 90%, var(--color-surface)); }
+.smallVisual:after { content: ""; position: absolute; width: 120px; height: 120px; border: 1px solid var(--color-yellow); transform: rotate(45deg); }
+.projectInfo { display: grid; align-content: center; gap: 12px; padding: 32px; }
+.projectInfo h3 { margin: 0; font-size: 32px; line-height: 1.1; }
+.projectInfo p { margin: 0; color: color-mix(in srgb, var(--color-navy) 72%, transparent); font-size: 18px; line-height: 1.55; }
+.link { width: fit-content; margin-top: 12px; padding: 12px 0; color: var(--color-navy); font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
+.supportingGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.supportingGrid .projectInfo { padding: 24px; }
+.supportingGrid .projectInfo h3 { font-size: 24px; }
+@media (max-width: 900px) { .section { padding: 72px 32px; } .headingRow, .flagship { grid-template-columns: 1fr; display: grid; align-items: start; } .supportingGrid { grid-template-columns: 1fr; } }

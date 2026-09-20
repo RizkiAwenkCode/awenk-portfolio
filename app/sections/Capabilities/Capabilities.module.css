@@ -1,0 +1,13 @@
+.section { max-width: 1280px; margin: 0 auto; padding: 96px 80px; }
+.headingBlock { max-width: 720px; margin-bottom: 40px; }
+.eyebrow { margin: 0 0 12px; color: color-mix(in srgb, var(--color-navy) 62%, transparent); font: 14px/1.4 var(--font-ibm-plex-mono), monospace; letter-spacing: .08em; text-transform: uppercase; }
+.heading { margin: 0; max-width: 680px; font-size: clamp(32px, 4vw, 48px); line-height: 1.08; letter-spacing: -.02em; }
+.grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(280px, .7fr); gap: 24px; }
+.stack { display: grid; gap: 24px; }
+.card { position: relative; display: grid; gap: 24px; min-height: 220px; padding: 32px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--color-navy) 16%, transparent); border-radius: var(--radius-card); background: var(--color-surface); }
+.featured { min-height: 464px; align-content: space-between; background: var(--color-navy); color: var(--color-canvas); }
+.index { color: color-mix(in srgb, currentColor 62%, transparent); font: 14px/1.4 var(--font-ibm-plex-mono), monospace; }
+.card h3 { max-width: 440px; margin: 0; font-size: 32px; line-height: 1.1; }
+.card p { max-width: 400px; margin: 12px 0 0; color: color-mix(in srgb, currentColor 72%, transparent); font-size: 18px; line-height: 1.55; }
+.signal { position: absolute; right: 32px; bottom: 24px; color: var(--color-yellow); font: 48px/1 var(--font-ibm-plex-mono), monospace; }
+@media (max-width: 900px) { .section { padding: 72px 32px; } .grid { grid-template-columns: 1fr; } .featured { min-height: 360px; } }

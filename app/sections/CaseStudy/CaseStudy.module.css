@@ -1,0 +1,13 @@
+.page { min-height: 100vh; max-width: 1280px; margin: 0 auto; padding: 32px 80px 96px; }
+.nav { min-height: 48px; display: flex; align-items: center; }
+.nav a { color: var(--color-navy); font-size: 16px; text-decoration: underline; text-underline-offset: 4px; }
+.header { max-width: 840px; padding: 128px 0 64px; }
+.eyebrow { margin: 0 0 16px; color: color-mix(in srgb, var(--color-navy) 62%, transparent); font: 14px/1.4 var(--font-ibm-plex-mono), monospace; letter-spacing: .08em; text-transform: uppercase; }
+.header h1 { margin: 0; font-size: clamp(48px, 7vw, 80px); line-height: 1; letter-spacing: -.03em; }
+.header p:last-child { max-width: 640px; margin: 32px 0 0; color: color-mix(in srgb, var(--color-navy) 72%, transparent); font-size: 18px; line-height: 1.6; }
+.visual { display: grid; place-items: center; min-height: 280px; margin-bottom: 64px; border-radius: var(--radius-card); background: var(--color-navy); color: var(--color-yellow); font: 14px/1.5 var(--font-ibm-plex-mono), monospace; text-transform: uppercase; }
+.story { max-width: 840px; }
+.story section { display: grid; grid-template-columns: 1fr 2fr; gap: 24px; padding: 32px 0; border-top: 1px solid color-mix(in srgb, var(--color-navy) 16%, transparent); }
+.story h2 { margin: 0; font-size: 24px; }
+.story p { margin: 0; color: color-mix(in srgb, var(--color-navy) 72%, transparent); font-size: 18px; line-height: 1.6; }
+@media (max-width: 900px) { .page { padding: 24px 32px 72px; } .header { padding-top: 96px; } .story section { grid-template-columns: 1fr; } }
